@@ -1,0 +1,15 @@
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\bin\Debug\net5.0\IntegrationHubApi.Infra.deps.json
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\bin\Debug\net5.0\IntegrationHubApi.Infra.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\bin\Debug\net5.0\IntegrationHubApi.Infra.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\bin\Debug\net5.0\IntegrationHubApi.Domain.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\bin\Debug\net5.0\IntegrationHubApi.Domain.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.csproj.AssemblyReference.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.AssemblyInfoInputs.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.AssemblyInfo.cs
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.csproj.CoreCompileInputs.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.csproj.CopyComplete
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\refint\IntegrationHubApi.Infra.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\IntegrationHubApi.Infra.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.Infra\obj\Debug\net5.0\ref\IntegrationHubApi.Infra.dll

@@ -1,0 +1,172 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Services\\IntegrationHubApi.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Domain\\IntegrationHubApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Domain\\IntegrationHubApi.Domain.csproj",
+        "projectName": "IntegrationHubApi.Domain",
+        "projectPath": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Domain\\IntegrationHubApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\kaique.ferreira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\NuGet.Config",
+          "C:\\Users\\kaique.ferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/uoledtech/_packaging/AtenaPackages/nuget/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ApiHelper": {
+              "target": "Package",
+              "version": "[3.2.10728, )"
+            },
+            "Dapper.FluentMap": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "JWT": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Services\\IntegrationHubApi.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Services\\IntegrationHubApi.Services.csproj",
+        "projectName": "IntegrationHubApi.Services",
+        "projectPath": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Services\\IntegrationHubApi.Services.csproj",
+        "packagesPath": "C:\\Users\\kaique.ferreira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\NuGet.Config",
+          "C:\\Users\\kaique.ferreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/uoledtech/_packaging/AtenaPackages/nuget/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Domain\\IntegrationHubApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\kaique.ferreira\\Documents\\Git kaique\\hub-integration-api\\src\\IntegrationHubApi.Domain\\IntegrationHubApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ApiHelper": {
+              "target": "Package",
+              "version": "[3.2.10728, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

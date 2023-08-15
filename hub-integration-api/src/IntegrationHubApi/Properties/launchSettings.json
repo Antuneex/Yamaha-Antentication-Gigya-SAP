@@ -1,0 +1,19 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:18567",
+      "sslPort": 44321
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "IntegrationApiRead_SQL": "Server=10.106.200.4,2354;Database=Hub;User ID=hub_dev_apps;Password=f7%LmF6kRdoa;",
+      "IntegrationApiWrite_SQL": "Server=10.106.200.4,2354;Database=Hub;User ID=hub_dev_apps;Password=f7%LmF6kRdoa;"
+    }
+  }
+}

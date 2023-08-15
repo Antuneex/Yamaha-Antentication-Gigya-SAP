@@ -1,0 +1,28 @@
+version: '3.4'
+services:
+    hub-integration-api:
+        image: #{CONT_REGISTRY}:#{CONT_TAG_VER}
+        environment:
+            AuthorizationClientId: "#{AuthorizationClientId}"
+            AuthorizationClientSecret: "#{AuthorizationClientSecret}"
+            DEBUG_MODE: "#{DEBUG_MODE}"
+            ENVIROMENT_ID: "#{ENVIROMENT_ID}"
+            FIREBASE_TOKEN: "#{FIREBASE_TOKEN}"
+            FIREBASE_URL: "#{FIREBASE_URL}"
+            JwtClient: "#{JwtClient}"
+            JwtSecret: "#{JwtSecret}"
+            KEYCRIPTO: "#{KEYCRIPTO}"
+            IntegrationApiRead_SQL: "#{IntegrationApiRead_SQL}"
+            IntegrationApiWrite_SQL: "#{IntegrationApiWrite_SQL}"
+            UrlApi: "#{UrlApi}"
+            UrlApiAuthorization: "#{UrlApiAuthorization}"
+            NewRelic_Guids: "#{NewRelic_Guids}"
+            NewRelic_Key: "#{NewRelic_Key}"
+            NewRelic_Service : "#{NewRelic_Service}"
+            NewRelic_Url: "#{NewRelic_Url}"
+            Teams_TokenUrl: "#{Teams_TokenUrl}"
+            Teams_Scope: "#{Teams_Scope}"
+            Teams_CreateUrl: "#{Teams_CreateUrl}"
+            Teams_AuthorizeUrl: "#{Teams_AuthorizeUrl}"
+            Teams_DefaultConsumer: "#{Teams_DefaultConsumer}"
+            Teams_Key: "#{Teams_Key}"

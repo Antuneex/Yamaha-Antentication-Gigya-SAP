@@ -1,0 +1,15 @@
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\bin\Debug\net5.0\IntegrationHubApi.ExternalServices.deps.json
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\bin\Debug\net5.0\IntegrationHubApi.ExternalServices.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\bin\Debug\net5.0\IntegrationHubApi.ExternalServices.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\bin\Debug\net5.0\IntegrationHubApi.Domain.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\bin\Debug\net5.0\IntegrationHubApi.Domain.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.csproj.AssemblyReference.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.AssemblyInfoInputs.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.AssemblyInfo.cs
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.csproj.CoreCompileInputs.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.csproj.CopyComplete
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\refint\IntegrationHubApi.ExternalServices.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\IntegrationHubApi.ExternalServices.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.ExternalServices\obj\Debug\net5.0\ref\IntegrationHubApi.ExternalServices.dll

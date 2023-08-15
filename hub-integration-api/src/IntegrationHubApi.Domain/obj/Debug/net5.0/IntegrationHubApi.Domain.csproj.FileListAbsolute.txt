@@ -1,0 +1,12 @@
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\bin\Debug\net5.0\IntegrationHubApi.Domain.deps.json
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\bin\Debug\net5.0\IntegrationHubApi.Domain.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\bin\Debug\net5.0\IntegrationHubApi.Domain.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.csproj.AssemblyReference.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.AssemblyInfoInputs.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.AssemblyInfo.cs
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.csproj.CoreCompileInputs.cache
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\refint\IntegrationHubApi.Domain.dll
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\IntegrationHubApi.Domain.pdb
+C:\dev\hub-integration-api\src\IntegrationHubApi.Domain\obj\Debug\net5.0\ref\IntegrationHubApi.Domain.dll

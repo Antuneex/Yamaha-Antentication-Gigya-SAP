@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IntegrationHubApi</name>
+    </assembly>
+    <members>
+        <member name="T:IntegrationHubApi.Configuration.ConnectorConfiguration">
+            <summary>
+            Classe de Injeção de dependencia dos conectores
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.ConnectorConfiguration.AddConnectorConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Método de extensão de Injeção de dependencia dos conectores
+            </summary>
+        </member>
+        <member name="T:IntegrationHubApi.Configuration.DomainConfiguration">
+            <summary>
+            Classe para Injeção de dependencia dos objetos de domínio
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.DomainConfiguration.AddDomainConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Método de extensão para Injeção de dependencia dos objetos de domínio
+            </summary>
+        </member>
+        <member name="T:IntegrationHubApi.Configuration.FluentMapperConfiguration">
+            <summary>
+            Classe para Mapeamento de objetos no FluentMapper
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.FluentMapperConfiguration.AddFluentMapperConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Método de extensão para Mapeamento de objetos no FluentMapper
+            </summary>
+        </member>
+        <member name="T:IntegrationHubApi.Configuration.RepositoryConfiguration">
+            <summary>
+            Classe para Injeção de dependencia dos repositórios
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.RepositoryConfiguration.AddRepositoryConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Método de extensão de Injeção de dependencia dos repositórios
+            </summary>
+        </member>
+        <member name="T:IntegrationHubApi.Configuration.SwaggerConfiguration">
+            <summary>
+            Classe de configuração do Swagger
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.SwaggerConfiguration.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Metodo de configuração do swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.SwaggerConfiguration.UseSwaggerConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Método que configura a aplicação para utilizar o swagger
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:IntegrationHubApi.Configuration.Swagger.AddRequiredHeaderParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.Swagger.AddRequiredHeaderParameter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Incluí parâmetros necessários no header
+            </summary>
+            <param name="operation"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:IntegrationHubApi.Configuration.Swagger.HealthChecksFilter">
+            <summary>
+            HealthChecks
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.Swagger.HealthChecksFilter.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            
+            </summary>
+            <param name="openApiDocument"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:IntegrationHubApi.Configuration.Swagger.HealthChecksFilter.CriarResponse(System.Collections.Generic.Dictionary{System.String,Microsoft.OpenApi.Models.OpenApiSchema})">
+            <summary>
+            Response
+            </summary>
+            <param name="propertiesItem"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IntegrationHubApi.Controllers.MicrosoftTeamsController">
+            <summary>
+            Controller para o Gestão do Microsoft Teams
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.#ctor(MediatR.IMediator,IntegrationHubApi.Domain.Configs.CustomConfig)">
+            <summary>
+            Construtor.
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.ListAttendees(System.String,System.String)">
+            <summary>
+            Lista todos os participantes.
+            </summary>
+            <param name="id"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.GetMeeting(System.String,System.String)">
+            <summary>
+            Lista todos os participantes.
+            </summary>
+            <param name="id"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.GetAuthUrl">
+            <summary>
+            Lista todos os participantes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.NewMeeting(IntegrationHubApi.Services.MicrosoftTeams.Commands.CreateOrUpdateTeamsMeetingCommand)">
+            <summary>
+            Cria uma nova reunião no graph api 
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.Update(IntegrationHubApi.Services.MicrosoftTeams.Commands.CreateOrUpdateTeamsMeetingCommand)">
+            <summary>
+            Atualiza uma nova reunião no graph api 
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.GetAuthToken(IntegrationHubApi.Services.MicrosoftTeams.Commands.GetTokenCommand)">
+            <summary>
+            Recuperar token de autenticação a partir do código
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IntegrationHubApi.Controllers.MicrosoftTeamsController.JustToTests(System.String)">
+            <summary>
+            Apenas para teste local
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IntegrationHubApi.Program">
+            <summary>
+            Entrada do programa
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Program.Main(System.String[])">
+            <summary>
+            Entrada do programa
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:IntegrationHubApi.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Criação do Host
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IntegrationHubApi.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:IntegrationHubApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:IntegrationHubApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configuração dos serviços da aplicação
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:IntegrationHubApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

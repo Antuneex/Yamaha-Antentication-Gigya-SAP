@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "283347cb-6e96-4710-b054-81fd16511bfc",
+		"name": "Integration Hub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Integration Api",
+			"item": [
+				{
+					"name": "New Meeting",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Consumer-Username",
+								"value": "Teste 3",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6IjBvZmFWWndOcnJ6UWRLLXB5bHhXWElvMDFVZDFqbDNuRGFoN3d2UnhvR2MiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jMGE0ZmFhNS0yMDliLTQ5OTgtOTFkNi1lZmZmOWRlOGVmMTIvIiwiaWF0IjoxNjM3NjA2NjMzLCJuYmYiOjE2Mzc2MDY2MzMsImV4cCI6MTYzNzYxMTM1MCwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkUyWmdZTWhkK21SU2pyR3ZlK1QwUURYM0Z2MlpjLzd6U3ovKy8yaWl4RHJsVXE1U2xWa0EiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6IldlYkFwcFJpY2FyZG8iLCJhcHBpZCI6ImMwMDY5OWU2LTZhZjUtNDI1Zi05NDE5LTAwNzcyZmVhNDY2NiIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiVGVzdGUiLCJnaXZlbl9uYW1lIjoiVXN1YXJpbyIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjIwMC4yMjEuMTU3LjE3OCIsIm5hbWUiOiJzdmNhY2NfdGVzdGUiLCJvaWQiOiIxMWYxNzNiMy1mOGM3LTRhZWMtYTg0Zi1mYmUwOTYxODUxMGEiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwMzIwMDEzMkFGQzQ1NyIsInJoIjoiMC5BVFFBcGZxa3dKc2dtRW1SMXVfX25lanZFdWFaQnNEMWFsOUNsQmtBZHlfcVJtWTBBSkUuIiwic2NwIjoiT25saW5lTWVldGluZ3MuUmVhZFdyaXRlIFVzZXIuUmVhZCBwcm9maWxlIG9wZW5pZCBlbWFpbCIsInN1YiI6ImQzcWMtd2U2X29WeHlySVNPMXpWelZ1aGV1Tk9DM2w0UC1Ka0p1Z2ZnMkEiLCJ0ZW5hbnRfcmVnaW9uX3Njb3BlIjoiU0EiLCJ0aWQiOiJjMGE0ZmFhNS0yMDliLTQ5OTgtOTFkNi1lZmZmOWRlOGVmMTIiLCJ1bmlxdWVfbmFtZSI6InN2Y2FjY190ZXN0ZUBtcy51b2xlZHVjYWNhby5jb20iLCJ1cG4iOiJzdmNhY2NfdGVzdGVAbXMudW9sZWR1Y2FjYW8uY29tIiwidXRpIjoiWXlwYWNqOUZLVTJvbHRSVUd4YS1BQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19zdCI6eyJzdWIiOiJieXU3eHdJSnBxckpJMVZsWlVFUnRRRUs0SGZYeEdHajZzaVJwWkdnclFBIn0sInhtc190Y2R0IjoxNDM0Mzk5MjQ4fQ.cRJlPTgJQZel3H17FjywY871s-HFkkFOYHgHLRgbjiQGmoeYo790WqQXvjtlTyXd9qmUD156oWp1yi-y2kxy2w0NF_pb0AtLJcMS6WGmMBgtHHFyCcN2QU9vU3-OJKA1fe9gkOAn_moPU4kufa0WCt1pNL42uUVoje6nTd4L7nb_TTf1GlMO5mAGznaFOL6tKILFVcOreEJFZSE8IvQ1bYsdhmQd_G2K1wC4lS-z9JGCl7ASZvdEIl3sAGcF117xxDLyuu6M4GP2H7SyMeJ0bO7C6ZC5_wcv1oOZhWQwRCxnFFF401MKmd9_bqVbfzTD91E6Q8ARD5k--zuArjbBtg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Aula ao vivo\",\r\n    \"startOn\": \"2021-09-10T13:12:22.094Z\",\r\n    \"time\": 30,\r\n    \"createdOn\": null,\r\n    \"updatedOn\": null,\r\n    \"skipLobby\": 2,\r\n    \"announceParticipants\": false,\r\n    \"allowCamera\": false,\r\n    \"allowMicrophone\": true,\r\n    \"allowReactions\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/v1/MicrosoftTeams",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"v1",
+								"MicrosoftTeams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "URL Auth",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Consumer-Username",
+								"value": "Teste 3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44321/v1/MicrosoftTeams/authorization",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"v1",
+								"MicrosoftTeams",
+								"authorization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Consumer-Username",
+								"value": "Teste 1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44321/v1/microsoftteams/token?code=0.ATQApfqkwJsgmEmR1u__nejvEuaZBsD1al9ClBkAdy_qRmYKAIE.AQABAAIAAAD--DLA3VO7QrddgJg7Wevrl9EcACgN_nZRpBHse0LuCrU4nc6dLojQcj56QHS0AHid6u3wHqoMN_msM_K9WxJOlmcRCmXNZ3nfeKbEYp8X1XhciYNmTgOKGwq3CITVfNOM9zeFe4WTDQeqWX0m2ZAoITZ-4UUNcWpjIrE2qFfDMFCAC9kvh7bsq-k5i1abAATmF75XwvEqhYTAB9mUXkBJZXvzRyeHB0P6HOpRYCEDkMZ3nNdovvjM_pAzIydivBfylGS1tccrbx5Yv3KGEueJEWJSSyDMOIJaqVlNMalHTYvnsdN4wA5UfYmO49sW2BWjiFkz5FZv4IDNw_tKSc32TWcYPOwdSw7VvRqhLbzPuMbLtBLFhI-H1R-OV1Gxt1xw_effKbAZxT6k9_uZA7gAm7Esc7-fpA_9lEqwgn5PFsVp1OmNJtO-GGWMCdLo0mPvZofn-lwPZePNOVnBpUDeScF48Dx-RifSjvECcVqpJwBqsmAoxGfmiLghZxidUtFjTUY589I_CcUHXT9b4XwE_XL-9LP7BkCze7w4QzHBgNWRoEgDh886uIYTNtD25CWA9AdGzQCCnVs2H3TlapisAgp9rFGTdvWcmoirpLhh4yAA",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"v1",
+								"microsoftteams",
+								"token"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "0.ATQApfqkwJsgmEmR1u__nejvEuaZBsD1al9ClBkAdy_qRmYKAIE.AQABAAIAAAD--DLA3VO7QrddgJg7Wevrl9EcACgN_nZRpBHse0LuCrU4nc6dLojQcj56QHS0AHid6u3wHqoMN_msM_K9WxJOlmcRCmXNZ3nfeKbEYp8X1XhciYNmTgOKGwq3CITVfNOM9zeFe4WTDQeqWX0m2ZAoITZ-4UUNcWpjIrE2qFfDMFCAC9kvh7bsq-k5i1abAATmF75XwvEqhYTAB9mUXkBJZXvzRyeHB0P6HOpRYCEDkMZ3nNdovvjM_pAzIydivBfylGS1tccrbx5Yv3KGEueJEWJSSyDMOIJaqVlNMalHTYvnsdN4wA5UfYmO49sW2BWjiFkz5FZv4IDNw_tKSc32TWcYPOwdSw7VvRqhLbzPuMbLtBLFhI-H1R-OV1Gxt1xw_effKbAZxT6k9_uZA7gAm7Esc7-fpA_9lEqwgn5PFsVp1OmNJtO-GGWMCdLo0mPvZofn-lwPZePNOVnBpUDeScF48Dx-RifSjvECcVqpJwBqsmAoxGfmiLghZxidUtFjTUY589I_CcUHXT9b4XwE_XL-9LP7BkCze7w4QzHBgNWRoEgDh886uIYTNtD25CWA9AdGzQCCnVs2H3TlapisAgp9rFGTdvWcmoirpLhh4yAA"
+								},
+								{
+									"key": "session_state",
+									"value": "95e35241-e11a-4395-a55f-153a9cba5c78",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Meeting Default config",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Consumer-Username",
+								"value": "Teste 1",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6IlpPSGJsdF9zUjNaZzRvVDAtVVdkUWJDMXRxUUQ3ZnZEQ2U0Rk9PXzltSGMiLCJhbGciOiJSUzI1NiIsIng1dCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCIsImtpZCI6Imwzc1EtNTBjQ0g0eEJWWkxIVEd3blNSNzY4MCJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9jMGE0ZmFhNS0yMDliLTQ5OTgtOTFkNi1lZmZmOWRlOGVmMTIvIiwiaWF0IjoxNjM3MDczNzczLCJuYmYiOjE2MzcwNzM3NzMsImV4cCI6MTYzNzA3ODA2NCwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkUyWmdZSENjdzM5VlZySDRod0UzVjhURkxRc1NmUkwrdnRhOGEvVEhqU2R5dTAxNDdEUUEiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6IldlYkFwcFJpY2FyZG8iLCJhcHBpZCI6ImMwMDY5OWU2LTZhZjUtNDI1Zi05NDE5LTAwNzcyZmVhNDY2NiIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiVGVzdGUiLCJnaXZlbl9uYW1lIjoiVXN1YXJpbyIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjE3OS45OC4yMy4xMjQiLCJuYW1lIjoic3ZjYWNjX3Rlc3RlIiwib2lkIjoiMTFmMTczYjMtZjhjNy00YWVjLWE4NGYtZmJlMDk2MTg1MTBhIiwicGxhdGYiOiIzIiwicHVpZCI6IjEwMDMyMDAxMzJBRkM0NTciLCJyaCI6IjAuQVRRQXBmcWt3SnNnbUVtUjF1X19uZWp2RXVhWkJzRDFhbDlDbEJrQWR5X3FSbVkwQUpFLiIsInNjcCI6Ik9ubGluZU1lZXRpbmdzLlJlYWRXcml0ZSBVc2VyLlJlYWQgcHJvZmlsZSBvcGVuaWQgZW1haWwiLCJzdWIiOiJkM3FjLXdlNl9vVnh5cklTTzF6VnpWdWhldU5PQzNsNFAtSmtKdWdmZzJBIiwidGVuYW50X3JlZ2lvbl9zY29wZSI6IlNBIiwidGlkIjoiYzBhNGZhYTUtMjA5Yi00OTk4LTkxZDYtZWZmZjlkZThlZjEyIiwidW5pcXVlX25hbWUiOiJzdmNhY2NfdGVzdGVAbXMudW9sZWR1Y2FjYW8uY29tIiwidXBuIjoic3ZjYWNjX3Rlc3RlQG1zLnVvbGVkdWNhY2FvLmNvbSIsInV0aSI6IlJhTWdZNTVacUVXMFUzWGhTTE1iQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfc3QiOnsic3ViIjoiYnl1N3h3SUpwcXJKSTFWbFpVRVJ0UUVLNEhmWHhHR2o2c2lScFpHZ3JRQSJ9LCJ4bXNfdGNkdCI6MTQzNDM5OTI0OH0.Nlm5hYqyos7Jb_ajozcOgq5ofywl4IlrgDsSrfIe13z-ZUUGpvxFTyxqrjcNui44cs2RGbAsnt9JUTqqedtmVF9cAIfGNv66uAv9j9SgXS3SAcZ-D4cW0h3neJzovdQ8LY4yI9cGjcRv_XpL5Y1WRFUnm4g2jeR39U9sM5YYheAoqcMuJzqgGhSrbiMW75iAY6e7xW3l8GpuW2jMIqpcojMkA09XyqIYlRVfhXmTUXguqtfPJbrJ3LQzD5x6wfJW2ZymGDuqU1YYwSYGPmWZGwplMQuBEN02GizorKKC_717fX-Rloeqpd0SqvaIOAY-O9oxdxfcoWET_KYyDY1xrg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Aula ao vivo\",\r\n    \"startOn\": \"2021-09-10T13:12:22.094Z\",\r\n    \"time\": 30,\r\n    \"createdOn\": null,\r\n    \"updatedOn\": null,\r\n    \"skipLobby\": 2,\r\n    \"announceParticipants\": false,\r\n    \"allowCamera\": false,\r\n    \"allowMicrophone\": true,\r\n    \"allowReactions\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/v1/MicrosoftTeams",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"v1",
+								"MicrosoftTeams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Atendees",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Consumer-Username",
+								"value": "Teste 1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44321/v1/MicrosoftTeams?id=MSoxMWYxNzNiMy1mOGM3LTRhZWMtYTg0Zi1mYmUwOTYxODUxMGEqMCoqMTk6bWVldGluZ19NekppTmpVNE16RXRNVE5qWXkwME16a3pMVGcyWm1FdE9ESTBOVFV3WWpSa1pqQTJAdGhyZWFkLnYy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"v1",
+								"MicrosoftTeams"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "MSoxMWYxNzNiMy1mOGM3LTRhZWMtYTg0Zi1mYmUwOTYxODUxMGEqMCoqMTk6bWVldGluZ19NekppTmpVNE16RXRNVE5qWXkwME16a3pMVGcyWm1FdE9ESTBOVFV3WWpSa1pqQTJAdGhyZWFkLnYy"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

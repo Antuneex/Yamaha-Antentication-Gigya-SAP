@@ -1,0 +1,101 @@
+{
+    "plugins": [
+        {
+            "config": {
+                "methods": [
+                    "GET",
+                    "HEAD",
+                    "PUT",
+                    "PATCH",
+                    "POST",
+                    "DELETE",
+                    "OPTIONS",
+                    "TRACE",
+                    "CONNECT"
+                ],
+                "exposed_headers": null,
+                "max_age": null,
+                "headers": null,
+                "origins": null,
+                "credentials": false,
+                "preflight_continue": false
+            },
+            "id": "#{ID_PLUGIN_CORS_KONG}",
+            "service": {
+                "id": "#{ID_SERVICE_KONG}"
+            },
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "cors",
+            "consumer": null,
+            "route": null,
+            "tags": null
+        },
+        {
+            "config": {
+                "refresh_token_ttl": 1209600,
+                "enable_client_credentials": false,
+                "mandatory_scope": false,
+                "provision_key": "#{PROVISION_KEY_PLUGIN_OAUTH2_KONG}",
+                "accept_http_if_already_terminated": false,
+                "hide_credentials": false,
+                "enable_implicit_grant": false,
+                "global_credentials": true,
+                "enable_authorization_code": false,
+                "enable_password_grant": true,
+                "scopes": null,
+                "anonymous": null,
+                "token_expiration": 7200,
+                "auth_header_name": "authorization"
+            },
+            "id": "#{ID_PLUGIN_OAUTH2_KONG}",
+            "service": {
+                "id": "#{ID_SERVICE_KONG}"
+            },
+            "enabled": true,
+            "protocols": [
+                "grpc",
+                "grpcs",
+                "http",
+                "https"
+            ],
+            "name": "oauth2",
+            "consumer": null,
+            "route": null,
+            "tags": null
+        }      
+    ],
+    "routes": [
+        {
+            "id": "#{ID_ROUTE_KONG}",
+            "path_handling": "v1",
+            "paths": [
+                "#{SERVICE_API_ROUTE_URI}"
+            ],
+            "destinations": null,
+            "headers": null,
+            "protocols": [
+                "http",
+                "https"
+            ],
+            "methods": null,
+            "snis": null,
+            "service": {
+                "id": "#{ID_SERVICE_KONG}"
+            },
+            "name": "#{CONT_NAME}___uri",
+            "strip_path": true,
+            "preserve_host": false,
+            "regex_priority": 0,
+            "sources": null,
+            "hosts": null,
+            "https_redirect_status_code": 426,
+            "tags": null
+        }
+    ]
+}

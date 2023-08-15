@@ -1,0 +1,96 @@
+# Docker
+# Build a Docker image 
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+- homolog
+- dev
+
+resources:
+- repo: self
+
+variables:
+  tag: '$(Package.MajorVersion).$(Build.BuildID)'
+  Package.ProjectName: 'hub-integration-api'
+  Package.Name: 'hub-integration-api'
+  Package.MajorVersion: '1.0'
+  Package.Space: 'Ciatech'
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+     Package.ChannelName: 'Default'
+  ${{ if not(eq(variables['Build.SourceBranchName'], 'master')) }}:
+     Package.ChannelName: '$(Build.SourceBranchName)'  
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:  
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    
+    - task: NuGetCommand@2
+      displayName: 'Authenticate with Azure DevOps NuGet'
+      inputs:
+        command: custom
+        arguments: sources update -Name "AtenaPackages" -Username "rborges@uolinc.com" -Password "$(System.AccessToken)" -StorePasswordInClearText -ConfigFile ./NuGet.Config
+        
+    - task: Docker@2
+      displayName: 'Build and Push to Docker Registry'
+      inputs:
+        containerRegistry: 'Dev Az Container Registry'
+        repository: 'hub-integration-api'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
+        tags: |
+          $(tag)
+          
+    - task: OctoInstaller@4
+      inputs:
+        version: '6.17.3'
+            
+    - task: octopusdeploy.octopus-deploy-build-release-tasks.octopus-pack.OctopusPack@3
+      displayName: 'Package $(Package.Name).$(Build.SourceBranchName)'
+      inputs:
+        PackageId: '$(Package.Name).$(Build.SourceBranchName)'
+        PackageVersion: '$(Package.MajorVersion).$(Build.BuildID)'
+        SourcePath: '$(Build.Repository.LocalPath)/deploy'
+        OutputPath: '$(build.artifactstagingdirectory)/package'
+        
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact'
+      inputs:
+        PathtoPublish: '$(build.artifactstagingdirectory)/package'
+        ArtifactName: 'package'
+      condition: succeededOrFailed()
+
+    - task: octopusdeploy.octopus-deploy-build-release-tasks.octopus-push.OctopusPush@3
+      displayName: 'Push Packages to Octopus'
+      inputs:
+        OctoConnectedServiceName: 'Octopus Deploy'
+        Space: '$(Package.Space)'
+        Package: '$(Build.ArtifactStagingDirectory)/package/$(Package.Name).$(Build.SourceBranchName).$(Package.MajorVersion).$(Build.BuildID).nupkg'
+        Replace: true
+
+    - task: OctoInstaller@4
+      displayName: 'Define Versão do Octopus'
+      inputs:
+        version: '6.17.3'
+
+    - task: CmdLine@2
+      displayName: 'Create a Channel in Octopus'
+      inputs:
+        script: '/usr/bin/dotnet /opt/hostedtoolcache/octo/6.17.3/x64/Octo.dll  create-channel --project $(Package.ProjectName) --channel $(Package.ChannelName) --server $(Octopus.Server) --apikey $(Octopus.apikey)  --update-existing'
+
+    - task: OctopusCreateRelease@4
+      displayName: 'Create a Release in Octopus'
+      inputs:
+        OctoConnectedServiceName: 'Octopus Deploy'
+        Space: 'Spaces-1'
+        ProjectName: '$(Package.ProjectName)'
+        ReleaseNumber: '$(Package.MajorVersion).$(Build.BuildID)'
+        Channel: '$(Package.ChannelName)'
+        ChangesetCommentReleaseNotes: true
+        WorkItemReleaseNotes: true
